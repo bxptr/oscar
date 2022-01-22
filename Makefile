@@ -6,7 +6,7 @@ all: build test
 
 build:
 	rm -rf ./bin/*
-	gcc -I ./include ./src/example.c $(flags) -o ./bin/example
+	gcc -I ./include ./src/*.c $(flags) -o ./bin/example
 
 test:
 	./bin/example

@@ -1,4 +1,4 @@
-flags = -g -Wall
+flags = 
 
 .PHONY: all build test
 

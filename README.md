@@ -13,9 +13,37 @@
 - [x] Reliable, and Conservative Design
 - [x] Page-Sized Memory Allocation
 - [x] Smart and Efficient Memory Scanning
+- [x] Simple and User-Friendly API
 
-# Downloading and Usage
-`oscar` is currently under development, and is not ready for public use. Check back later!
+# Downloading
+
+Either `make` from source or download the release, and use the `oscar.h` in your code.
+
+# API
+
+### `oscarize`
+Initialize and setup `oscar`. No arguments and returns.
+
+### `oscar`
+Garbage collect. No arguments and returns.
+
+# Example
+
+Allocate `char` sized memory to `elmo` and then garbage collect it before exiting.
+
+```c
+#include <stdio.h>
+#include <oscar.h>
+
+int main() {
+    oscarize();
+    char* elmo = (char*) allocate(sizeof(char));
+    *elmo = "f";
+    printf(elmo);
+    oscar();
+    return 0;
+}
+```
 
 # Copyright &copy; 2022 Aarush Gupta
 This code is copyrighted but licensed to the public under the GNU AGPLv3 license and any later versions.

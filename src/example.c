@@ -1,10 +1,10 @@
 #include <stdio.h>
-
 #include <oscar.h>
 
 int main() {
     oscarize();
-    printf("hello world!");
-    int* elmo = (int*) allocate(sizeof(int));
+    char* elmo = (char*) allocate(sizeof(char));
+    *elmo = "f";
+    printf(elmo);
     return 0;
 }

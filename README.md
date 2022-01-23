@@ -21,10 +21,10 @@ Either `make` from source or download the release, and use the `oscar.h` in your
 
 # API
 
-### `oscarize`
+### `oscarize()`
 Initialize and setup `oscar`. No arguments and returns.
 
-### `oscar`
+### `oscar()`
 Garbage collect. No arguments and returns.
 
 # Example

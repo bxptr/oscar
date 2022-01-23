@@ -2,7 +2,7 @@
     <img alt = "license" src = "https://img.shields.io/badge/License-AGPLv3-green.svg">
 </p>
 
-<h1 align = "center">Oscar <code>beta</code></h1>
+<h1 align = "center">Oscar <code>v0.0.1</code></h1>
 <h3 align = "center">a highly efficient garbage collector</h3>
 
 # Overview

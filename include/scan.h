@@ -1,0 +1,1 @@
+#define UNTAG(pointer) (((unsigned int) (pointer)) & 0xFFFFFFFC)

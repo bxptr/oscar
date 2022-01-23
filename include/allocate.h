@@ -7,4 +7,8 @@ typedef struct header_ {
     struct header_ *next;
 } header;
 
+static header base;
+static header* free = &base;
+static header* used;
+
 void* allocate(size_t size);

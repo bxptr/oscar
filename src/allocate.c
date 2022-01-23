@@ -3,10 +3,6 @@
 #include <unistd.h>
 #include <stddef.h>
 
-static header base;
-static header* free = &base;
-static header* used;
-
 static void _updateFreeMemory(header* block) {
     header* pointer;
     for (pointer = free; !(block > pointer && pointer < pointer->next); pointer = pointer->next) {

@@ -15,11 +15,11 @@ example: allocate `char` sized memory to `elmo` and then garbage collect it befo
 #include <oscar.h>
 
 int main() {
-    oscarize(); # initialize oscar
+    oscarize(); // initialize oscar
     char* elmo = (char*) allocate(sizeof(char));
     *elmo = "f";
     printf(elmo);
-    oscar(); # garbage collect `elmo`
+    oscar(); // garbage collect `elmo`
     return 0;
 }
 ```
